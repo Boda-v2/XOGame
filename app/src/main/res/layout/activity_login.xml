@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/main_background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X O Game By : Boda_v2"
+        android:textColor="#797E7E"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="7dp"/>
+    
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Player Name"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="50dp"/>
+    <EditText
+        android:id="@+id/playerOneET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleTV"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded_shape"
+        android:padding="16dp"
+        android:hint="Enter Player One Name"
+        android:textColorHint="#897F7F"
+        android:inputType="textPersonName"
+        android:imeOptions="actionNext" />
+    <EditText
+        android:id="@+id/playerTwoET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/playerOneET"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded_shape"
+        android:padding="16dp"
+        android:hint="Enter Player Two Name"
+        android:textColorHint="#897F7F"
+        android:inputType="textPersonName"
+        android:imeOptions="actionDone"/>
+    
+    <Button
+        android:id="@+id/startBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/playerTwoET"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="16dp"
+        android:backgroundTint="#1E93CE"
+        android:text="Start Game"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
